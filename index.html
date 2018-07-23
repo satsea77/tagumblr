@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja" manifest="index.manifest">
 <head>
-<meta charset="utf-8" />
+<meta charset="utf-8">
 <meta name="description" content="Tumblr用のタグクラウド・ジェネレータ(Tag Cloud)。わずか３ステップでブログパーツが完成します。,tumblr tag cloud generator,tumblr tag cloud maker,tumblr tag cloud creator">
 <meta name="keywords" content="Tumblr,Tag,Cloud,タグクラウド,generator,maker,creator">
-<meta name="google-site-verification" content="faOub5ii2QX5DLftfzRTi3q8iNu1RP6aDRXqXy1iLfc" />
+<meta name="google-site-verification" content="faOub5ii2QX5DLftfzRTi3q8iNu1RP6aDRXqXy1iLfc">
 <link rel="shortcut icon" href="img/favicon2.ico">
 <!--CSS Framework [Bluetrip]-->
-<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
-<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
 <!--[if IE]>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection">
 <![endif]-->
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
 
-<script type="text/javascript" src="jsst/jquery-1.6.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <title>Tagumblr - Tumblr Tag Cloud Generator -</title>
 </head>
@@ -23,7 +23,7 @@
 	<!--ヘッダー-->
 	<div id="header" class="span-24">
 		<div class="span-16">
-			<H1><a href="http://tagumblr.appspot.com/"><img src="img/logo.png" alt="Tagumblr" title="Tagumblr"></a></H1>
+			<H1><a href="https://satsea77.github.io/tagumblr/"><img src="img/logo.png" alt="Tagumblr" title="Tagumblr"></a></H1>
 			<H4>- Tumblr Tag Cloud Generator -</H4>
 		</div>
 		<div class="span-6 last">
@@ -38,25 +38,19 @@
 			</div>
 			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4db19b9422ccce0e"></script>
 			<!-- AddThis Button END -->
-			<!-- Google +1 BEGIN -->
-			<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
-			  {lang: 'ja'}
-			</script>
-			<g:plusone size="medium"></g:plusone>
-			<!--Google +1 END-->
-			<br />
+			<br>
 			<a href="http://s01.flagcounter.com/more/7exS"><img src="http://s01.flagcounter.com/count/7exS/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=6/viewers=3/labels=0/pageviews=1/" alt="free counters" border="0"></a>
-			<br />
+			<br>
 			<div id="divLang">
 				<ul>
 					<li>Language：</li>
-					<li><a href="http://tagumblr.appspot.com/"><img src="img/jpn.png" alt="日本語"  title="日本語"></a></li>
+					<li><a href="https://satsea77.github.io/tagumblr/"><img src="img/jpn.png" alt="日本語"  title="日本語"></a></li>
 					<li><a href="endex.html"><img src="img/eng.png" alt="English" title="English"></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<hr />
+	<hr>
 
 	<div id="contents" class="span-24">
 		<!--コンテンツ-->
@@ -64,17 +58,17 @@
 			<H5>Tumblr用のタグクラウド(ブログパーツ)を３ステップで作り出します。</H5>
 			<UL>
 				<LI>iFrame化しているので、メイン画面の読み込み速度に影響を与えません。</LI>
-				<LI>端末にキャッシュを保存しているので、２度目は高速で表示されます。<br />
+				<LI>端末にキャッシュを保存しているので、２度目は高速で表示されます。<br>
 				(HTML5のlocalStorageを使用※モダンブラウザのみ対応)</LI>
 				<LI>更新ボタンを押すことで、タグを最新化できます。</LI>
 			</UL>
 			<div id="divIn">
 				<H5><img src="img/01.png" alt="Step.1">あなたのタンブラーのURLと取得するPOST数を入力して、タグを作成してください。</H5>
-				<div><label for="txtUrl">URL:http://</label><input type="text" id="txtUrl" value="yourname.tumblr.com" /></div>
+				<div><label for="txtUrl">URL:http://</label><input type="text" id="txtUrl" value="yourname.tumblr.com"></div>
 				<div><label for="selMax">取得POST数:</label><select id="selMax"></select>※数が多いと精度は上がりますが、遅くなります。</div>
 				<div><label for="txtWide">幅(width):</label><input type="text" id="txtWide" placeholder="300">px&nbsp;※任意(option)</div>
 				<div><label for="txtHigh">高さ(height):</label><input type="text" id="txtHigh" placeholder="400">px&nbsp;※任意(option)</div>
-				<div><input type="button" id="btnCreateTag" value="タグを作成する" onclick="btnCreateTag_OnClick()" /></div>
+				<div><input type="button" id="btnCreateTag" value="タグを作成する" onclick="btnCreateTag_OnClick()"></div>
 			</div>
 
 			<div id="divResult" style="display:none;">
@@ -97,18 +91,18 @@
 				 	<li><a href="http://twitter.com/satsea77" target="_blank"><img src="img/twitter.png" alt="Twitter" title="Twitter"></a></li>					<li><a href="http://satsea77.tumblr.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr" title="Tumblr"></a></li>					<li><a href="http://satsea77.tumblr.com/post/4890288521/tumblr-tag-cloud-3-tagumblr" target="_blank"><img src="img/info.png" alt="info" title="info"></a></li>
 				</ul>
 			</div>
-			<div id="divApps">
+<!--			<div id="divApps">
 				<H6>My Tumblr Apps</H6>
 				<ul>
 					<li><a href="http://tagumblr.appspot.com/" target="_blank"><img src="img/tagumblr.png" alt="Tagumblr" title="Tagumblr - TumblrTagCloudGenerator"></a></li>
 					<li><a href="http://tagumblr.appspot.com/BookmarkletEx.html" target="_blank"><img src="img/Bookmarklet.png" alt="TumblrBookmarkletEx" title="BookmarkletEx"></a></li>
 					<li><a href="http://tag4tumblr.appspot.com/t4tumblr.html" target="_blank"><img src="img/iphone.png" alt="Tag4Tumblr" title="iPhone用のTag4Tumblr"></a></li>
 				</ul>
-			</div>
+			</div>-->
 			
 			<H6>設置イメージ(width:250)</H6>
 			<div>
-			    <IFRAME src="http://tagumblr.appspot.com/Tagumblr.html?url=satsea77.tumblr.com&max=50" frameborder="0" width="250"></IFRAME>
+			    <IFRAME src="https://satsea77.github.io/tagumblr/Tagumblr.html?url=satsea77.tumblr.com&max=50" frameborder="0" width="250"></IFRAME>
 			</div>
 			
 			<H6>Ad</H6>
@@ -128,7 +122,7 @@
 		</div>
 	</div>
 
-	<hr class="space"/><hr />
+	<hr class="space"/><hr>
 
 	<!--フッター-->
 	<div id="footer" class="span-24 last center">
