@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja" manifest="index.manifest">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="iPhoneからTumblrのブックマークレットを使って画像を登録しやすくするブックマークレット,tumblr,bookmarklet,Tumblr BookmarkletEx,拡張">
+<meta name="keywords" content="Tumblr,Bookmarklet,ブックマークレット">
+<!--<meta name="google-site-verification" content="faOub5ii2QX5DLftfzRTi3q8iNu1RP6aDRXqXy1iLfc" />-->
+<link rel="shortcut icon" href="imgEx/favicon.ico">
+<!--CSS Framework [Bluetrip]-->
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if IE]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" />
+<![endif]-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+<!--
+<script type="text/javascript" src="jsst/jquery-1.6.1.min.js"></script>
+-->
+<title>Tumblr BookmarkletEx - TumblrBookmarklet拡張 -</title>
+</head>
+<body>
+<div class="container">
+	<!--ヘッダー-->
+	<div id="header" class="span-24">
+		<div class="span-16">
+			<H1><a href="http://tagumblr.appspot.com/BookmarkletEx.html"><img src="imgEx/logo.png" alt="Tagumblr" title="Tagumblr"></a></H1>
+			<H4>- TumblrBookmarklet拡張 -</H4>
+		</div>
+		<div class="span-6 last">
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_facebook"></a>
+			<a class="addthis_button_twitter"></a>
+			<a class="addthis_button_hatena"></a>
+			<!--<a class="addthis_button_preferred_4"></a>-->
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4dbead854c1ce930"></script>
+			<!-- AddThis Button END -->
+			<!-- Google +1 BEGIN -->
+			<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+			  {lang: 'ja'}
+			</script>
+			<g:plusone size="medium"></g:plusone>
+			<!--Google +1 END-->
+			<br />
+			<a href="http://s01.flagcounter.com/more/7exS"><img src="http://s01.flagcounter.com/count/7exS/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=6/viewers=3/labels=0/pageviews=1/" alt="free counters" border="0"></a>
+<!--			<br />
+			<div id="divLang">
+				<ul>
+					<li>Language：</li>
+					<li><a href="http://tagumblr.appspot.com/"><img src="img/jpn.png" alt="日本語"  title="日本語"></a></li>
+					<li><a href="endex.html"><img src="img/eng.png" alt="English" title="English"></a></li>
+				</ul>
+			</div>
+-->
+		</div>
+	</div>
+	<hr />
+
+	<div id="contents" class="span-24">
+		<!--コンテンツ-->
+		<div id="main" class="span-16 colborder">
+			<H5>iPhoneからTumblrのブックマークレットを使って画像を登録しやすくするブックマークレット</H5>
+			<UL>
+				<LI>iPhoneのSafariからブックマークレットを使ってTumblrに画像をPOSTしようとすると<br />
+				画像の枠が小さいので選択が非常に困難です。<br /></LI>
+				<LI>このブックマークレットを使うと、枠が大きくなります。<br />
+				<img src="imgEx/beforeafter.png" alt="after" title="after"></LI>
+			</UL>
+			<div id="divIn">
+				<H5><img src="img/01.png" alt="Step.1">Tumblr公式ブックマークレットの登録</H5>
+				<div>登録済みの人は「Step.2」へ</div>
+				<div>1.<a href="./javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='http://www.tumblr.com/share',l=d.location,e=encodeURIComponent,p='?v=3&u='+e(l.href)%20+'&t='+e(d.title)%20+'&s='+e(s),u=f+p;try%7Bif(!/%5E(.*%5C.)?tumblr%5B%5E.%5D*%24/.test(l.host))throw(0);tstbklt();%7Dcatch(z)%7Ba%20=function()%7Bif(!w.open(u,'t','toolbar=0,resizable=0,status=1,width=450,height=430'))l.href=u;%7D;if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();%7Dvoid(0)">このリンクiPhone の Safari でタップ</a>すると 「Not Found」（404エラー）になりますが、そのままブックマークに追加します。</div>
+				<div>2.ブックマークの編集で「javascript:」からはじまるようにリンクを編集します。<br />
+				（”http://tagumblr.appspot.com/” を削除します）</div>
+				<div>3.自分がPOSTしたいページで「Tumblr公式ブックマークレット」を起動</div>
+			</div>
+
+			<div id="divResult">
+				<H5><img src="img/02.png" alt="Step.2">TumblrBookmarkletExの登録</H5>
+				<div>1.<a href="./javascript:function%20SzUp(ele){var%20item=$(ele);var%20iHigh=Element.getHeight(item);%20Element.setStyle(item,%20{'height':iHigh+100+'px'});}SzUp('img_container');SzUp('container');">このリンクiPhone の Safari でタップ</a>すると 「Not Found」（404エラー）になりますが、そのままブックマークに追加します。</div>
+				<div>2.ブックマークの編集で「javascript:」からはじまるようにリンクを編集します。<br />
+				（”http://tagumblr.appspot.com/” を削除します）</div>
+				<div>3.画像タブで「TumblrBookmarkletEx」を起動</div>
+			</div>
+			
+			<div id="divImage">
+				<H5>参考：ブックマークレット登録イメージ</H5>
+				<img src="imgEx/001.png" alt="Safariでタップ" title="Safariでタップ">
+				<img src="imgEx/002.png" alt="ブックマークに登録" title="ブックマークに登録">
+				<img src="imgEx/003.png" alt="ブックマークに追加" title="ブックマークに追加">
+				<img src="imgEx/004.png" alt="タイトルを変更" title="タイトルを変更">
+				<img src="imgEx/005.png" alt="ブックマークを開く" title="ブックマークを開く">
+				<img src="imgEx/006.png" alt="ブックマークの編集" title="ブックマークの編集">
+				<img src="imgEx/007.png" alt="javascriptから始まるようにする" title="javascriptから始まるようにする">
+			</div>
+			<div id="divImage">
+				<H5>参考：ブックマークレット使用イメージ</H5>
+				<img src="imgEx/011.png" alt="好きなページで" title="好きなページで">
+				<img src="imgEx/012.png" alt="公式ブックマークレット" title="公式ブックマークレット">
+				<img src="imgEx/013.png" alt="画像タブ" title="画像タブ">
+				<img src="imgEx/014.png" alt="TumblrBookmarkletEx" title="TumblrBookmarkletEx">
+				<img src="imgEx/015.png" alt="広くなります" title="広くなります"><br />
+				※TumblrBookmarkletExは何度でも使えます。どんどん枠が広くなります。			</div>
+		</div>
+		
+		<!--サイドバー-->
+		<div id="sidebar" class="span-6 last">
+			<div id="divMe">
+				<H6>About</H6>
+				<ul>
+				 	<li><a href="http://twitter.com/satsea77" target="_blank"><img src="img/twitter.png" alt="Twitter" title="Twitter"></a></li>					<li><a href="http://satsea77.tumblr.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr" title="Tumblr"></a></li>					<li><a href="http://satsea77.tumblr.com/post/5133558541/iphone-safari-tumblr-post-tumblr" target="_blank"><img src="img/info.png" alt="info" title="info"></a></li>
+				</ul>
+			</div>
+			<div id="divApps">
+				<H6>My Tumblr Apps</H6>
+				<ul>
+					<li><a href="http://tagumblr.appspot.com/" target="_blank"><img src="img/tagumblr.png" alt="Tagumblr" title="Tagumblr - TumblrTagCloudGenerator"></a></li>
+					<li><a href="http://tagumblr.appspot.com/BookmarkletEx.html" target="_blank"><img src="img/bookmarklet.png" alt="TumblrBookmarkletEx" title="BookmarkletEx"></a></li>
+					<li><a href="http://tag4tumblr.appspot.com/t4tumblr.html" target="_blank"><img src="img/iphone.png" alt="Tag4Tumblr" title="iPhone用のTag4Tumblr"></a></li>
+				</ul>
+			</div>
+			
+			<H6>Ad</H6>
+			<!-- Rakuten Rankinglink FROM HERE -->
+			<!--<iframe width="200" height="628" frameBorder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="http://xml.affiliate.rakuten.co.jp?type=js&service=ranking&hash=0618cf46.6d0a932e&theme=computer&num=5&sc=1&p=0_13_333333_FFFFFF_FFFFFF_0000FF_990000_1&title=Rakuten%20Ranking"></iframe>-->
+			<!-- Rakuten Rankinglink TO HERE -->
+			<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=movieandstock-22&o=9&p=14&l=bn1&mode=books-jp&browse=202188011&fc1=000000&lt1=_blank&lc1=3366FF&bg1=FFFFFF&f=ifr" marginwidth="0" marginheight="0" width="160" height="600" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>
+		</div>
+	</div>
+
+	<hr class="space"/><hr />
+
+	<!--フッター-->
+	<div id="footer" class="span-24 last center">
+		このページはCSS Framework「Bluetrip」でデザインされております。
+	</div>
+</div>
+</body>
+</html>

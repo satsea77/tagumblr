@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" manifest="index.manifest">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Tag Cloud Generator for tumlbr.by only 3steps.,tumblr tag cloud generator,tumblr tag cloud maker,tumblr tag cloud creator">
+<meta name="keywords" content="Tumblr,Tag,Cloud,generator,maker,creator">
+<link rel="shortcut icon" href="img/favicon2.ico">
+<!--CSS Framework [Bluetrip]-->
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if IE]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" />
+<![endif]-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+
+<script type="text/javascript" src="jsst/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<title>Tagumblr - Tumblr Tag Cloud Generator -</title>
+</head>
+<body>
+<div class="container">
+	<!--ヘッダー-->
+	<div id="header" class="span-24">
+		<div class="span-16">
+			<H1><a href="http://tagumblr.appspot.com/"><img src="img/logo.png" alt="Tagumblr" title="Tagumblr"></a></H1>
+			<H4>- Tumblr Tag Cloud Generator -</H4>
+		</div>
+		<div class="span-6 last">
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<!--<a class="addthis_button_preferred_4"></a>-->
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4db19b9422ccce0e"></script>
+			<!-- AddThis Button END -->
+			<!-- Google +1 BEGIN -->
+			<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+			  {lang: 'ja'}
+			</script>
+			<g:plusone size="medium"></g:plusone>
+			<!--Google +1 END-->
+			<br />
+			<a href="http://s01.flagcounter.com/more/7exS"><img src="http://s01.flagcounter.com/count/7exS/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=6/viewers=3/labels=0/pageviews=1/" alt="free counters" border="0"></a>
+			<br />
+			<div id="divLang">
+				<ul>
+					<li>言語：</li>
+					<li><a href="http://tagumblr.appspot.com/"><img src="img/jpn.png" alt="日本語"  title="日本語"></a></li>
+					<li><a href="endex.html"><img src="img/eng.png" alt="English" title="English"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div id="contents" class="span-24">
+		<!--コンテンツ-->
+		<div id="main" class="span-16 colborder">
+			<H5>"Tagumblr" generate  tag cloud (Blog parts) for tumblr by 3 step!</H5>
+			<UL>
+				<LI>main screen loading is not slow, because Using iFrame.</LI>
+				<LI>2nd visit will be displayed at high speed,because 1st visit saved your cash in local storage.<br />
+				(Using localStrage by HTML5※modern browser only.)</LI>
+				<LI>tag make an update by click "refresh" button</LI>
+			</UL>
+			<div id="divIn">
+				<H5><img src="img/01.png" alt="Step.1">Input your tumblr url and post number</H5>
+				<div><label for="txtUrl">URL:http://</label><input type="text" id="txtUrl" value="yourname.tumblr.com" /></div>
+				<div><label for="selMax">Get the number of POST:</label><select id="selMax"></select>※A large number of increases precision, but slower.</div>
+				<div><label for="txtWide">width:</label><input type="text" id="txtWide" placeholder="300">px&nbsp;※option</div>
+				<div><label for="txtHigh">height:</label><input type="text" id="txtHigh" placeholder="400">px&nbsp;※option</div>
+				<div><input type="button" id="btnCreateTag" value="Create Tags" onclick="btnCreateTag_OnClick()" /></div>
+			</div>
+
+			<div id="divResult" style="display:none;">
+				<H5><img src="img/02.png" alt="Step.2">copy the HTML Tags</H5>
+				<div>
+					<input type="button" id="btnCopy" value="select" onclick='$("#txaTag").select();'/>
+				</div>
+				<div><textarea id="txaTag" cols="60" rows="5" ></textarea></div>
+				<div id="divTestShow"><img src="img/sample.png" alt="sample"></div>
+				<H5><img src="img/03.png" alt="Step.3">paste to your tumblr</H5>
+				Tumblr -「customize」→「テーマ編集」→Paste→「Preview」→「Save」
+			</div>
+		</div>
+		
+		<!--サイドバー-->
+		<div id="sidebar" class="span-6 last">
+			<div id="divMe">
+				<H6>About</H6>
+				<ul>
+				 	<li><a href="http://twitter.com/satsea77" target="_blank"><img src="img/twitter.png" alt="Twitter" title="Twitter"></a></li>					<li><a href="http://satsea77.tumblr.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr" title="Tumblr"></a></li>					<li><a href="http://satsea77.tumblr.com/post/4890288521/tumblr-tag-cloud-3-tagumblr" target="_blank"><img src="img/info.png" alt="info" title="info"></a></li>
+				</ul>
+			</div>
+			<div id="divApps">
+				<H6>My Tumblr Apps</H6>
+				<ul>
+					<li><a href="http://tagumblr.appspot.com/" target="_blank"><img src="img/tagumblr.png" alt="Tagumblr" title="Tagumblr - TumblrTagCloudGenerator"></a></li>
+					<li><a href="http://tagumblr.appspot.com/BookmarkletEx.html" target="_blank"><img src="img/Bookmarklet.png" alt="TumblrBookmarkletEx" title="BookmarkletEx"></a></li>
+					<li><a href="http://tag4tumblr.appspot.com/t4tumblr.html" target="_blank"><img src="img/iphone.png" alt="Tag4Tumblr" title="iPhone用のTag4Tumblr"></a></li>
+				</ul>
+			</div>
+			
+			<H6>image(width:250)</H6>
+			<div>
+			    <IFRAME src="http://tagumblr.appspot.com/Tagumblr.html?url=satsea77.tumblr.com&max=50" frameborder="0" width="250"></IFRAME>
+			</div>
+			
+			<H6>Ad</H6>
+			<!-- Rakuten Rankinglink FROM HERE -->
+			<!--<iframe width="200" height="628" frameBorder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="http://xml.affiliate.rakuten.co.jp?type=js&service=ranking&hash=0618cf46.6d0a932e&theme=computer&num=5&sc=1&p=0_13_333333_FFFFFF_FFFFFF_0000FF_990000_1&title=Rakuten%20Ranking"></iframe>-->
+			<!-- Rakuten Rankinglink TO HERE -->
+			<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=movieandstock-22&o=9&p=14&l=bn1&mode=books-us&browse=52033011&fc1=000000&lt1=_blank&lc1=3366FF&bg1=FFFFFF&f=ifr" marginwidth="0" marginheight="0" width="160" height="600" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>
+			<H6>cache(localStorage)support Status</H6>
+			<table>
+				<tr><th>browser</th><th>version</th></tr>
+				<tr><td>IE</td><td>8+</td></tr>
+				<tr><td>Firefox</td><td>3.5+</td></tr>
+				<tr><td>Safari</td><td>4.0+</td></tr>
+				<tr><td>Chrome</td><td>4.0+</td></tr>
+				<tr><td>Opera</td><td>10.5+</td></tr>
+			</table>
+		</div>
+	</div>
+
+	<hr class="space"/><hr />
+
+	<!--フッター-->
+	<div id="footer" class="span-24 last center">
+		This Page designed by CSS Framework「Bluetrip」
+	</div>
+</div>
+</body>
+</html>

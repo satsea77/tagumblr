@@ -1,0 +1,24 @@
+#tags {
+	font-family:'Helvetica';
+	background-color:#eee;
+	padding:1em;
+}
+#tags li {
+	display:inline;
+	line-height:1.2;
+}
+#tags li a {
+	color:#06c;
+	background-color:#eee;
+	border:0;
+	text-decoration:none;
+	font-weight:normal;
+}
+#tags li a:hover {
+	background-color:#06c;
+	color:#eee;
+	text-decoration:none;
+}
+img {
+	border: none;
+}
